@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+TestNG Suite Configuration
+This file demonstrates:
+1. TestNG suite organization
+2. Test grouping and parallel execution
+3. Configuration for data-driven testing
+4. Test class inclusion/exclusion
+-->
+<suite name="Login Test Suite">
+    <!-- 
+    Test Configuration Block
+    - name: Descriptive name for the test group
+    - verbose: Level of logging detail (1-10)
+    - parallel: Test execution mode (methods/classes/tests)
+    - thread-count: Number of parallel threads
+    -->
+    <test name="Data Driven Tests" verbose="2">
+        <!-- 
+        Test Classes
+        - Specifies which test classes to include
+        - Classes are executed in order listed
+        - Each class represents a group of related tests
+        -->
+        <classes>
+            <class name="com.selenium.test.tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>

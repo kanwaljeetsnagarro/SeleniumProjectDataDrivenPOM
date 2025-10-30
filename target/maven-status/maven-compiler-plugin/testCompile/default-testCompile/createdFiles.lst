@@ -1,0 +1,3 @@
+com\selenium\test\tests\RegisterTest.class
+com\selenium\test\tests\LoginTest.class
+com\selenium\test\tests\BaseTest.class
