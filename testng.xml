@@ -26,6 +26,7 @@ This file demonstrates:
         -->
         <classes>
             <class name="com.selenium.test.tests.LoginTest"/>
+            <class name="com.selenium.test.tests.CheckoutTest"/>
         </classes>
     </test>
 </suite>

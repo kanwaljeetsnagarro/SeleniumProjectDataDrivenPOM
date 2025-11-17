@@ -1,6 +1,7 @@
 com/selenium/test/utils/ExcelDataProvider$1.class
+com/selenium/test/utils/TestDataGenerator.class
+com/selenium/test/pages/CheckoutPage.class
 com/selenium/test/utils/ExcelDataProvider.class
 com/selenium/test/pages/BasePage.class
 com/selenium/test/pages/LoginPage.class
-com/selenium/test/utils/TestDataGenerator.class
 com/selenium/test/pages/RegisterPage.class

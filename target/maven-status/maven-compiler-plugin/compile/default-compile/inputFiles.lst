@@ -1,4 +1,5 @@
 /home/runner/work/SeleniumProjectDataDrivenPOM/SeleniumProjectDataDrivenPOM/src/main/java/com/selenium/test/pages/BasePage.java
+/home/runner/work/SeleniumProjectDataDrivenPOM/SeleniumProjectDataDrivenPOM/src/main/java/com/selenium/test/pages/CheckoutPage.java
 /home/runner/work/SeleniumProjectDataDrivenPOM/SeleniumProjectDataDrivenPOM/src/main/java/com/selenium/test/pages/LoginPage.java
 /home/runner/work/SeleniumProjectDataDrivenPOM/SeleniumProjectDataDrivenPOM/src/main/java/com/selenium/test/pages/RegisterPage.java
 /home/runner/work/SeleniumProjectDataDrivenPOM/SeleniumProjectDataDrivenPOM/src/main/java/com/selenium/test/utils/ExcelDataProvider.java
