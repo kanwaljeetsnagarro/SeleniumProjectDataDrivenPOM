@@ -31,14 +31,26 @@ public class BaseTest {
         // Setup WebDriver based on browser parameter
         switch (browser.toLowerCase()) {
             case "firefox":
-                WebDriverManager.firefoxdriver().setup();
+                try {
+                    WebDriverManager.firefoxdriver().setup();
+                } catch (Exception e) {
+                    System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+                }
                 driver = new FirefoxDriver();
                 break;
             case "chrome":
             default:
-                WebDriverManager.chromedriver().setup();
+                try {
+                    WebDriverManager.chromedriver().setup();
+                } catch (Exception e) {
+                    // Fallback to system ChromeDriver if WebDriverManager fails
+                    System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+                }
                 org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
                 options.addArguments("--remote-allow-origins=*");
+                options.addArguments("--headless");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
                 driver = new ChromeDriver(options);
                 break;
         }
